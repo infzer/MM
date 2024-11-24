@@ -30,7 +30,7 @@ public class Jugada {
                     fichas[i] = Color.PURPURA;
                     break;
                 default:
-                    throw new IllegalArgumentException("Car·cter no v·lido: " + cadena.charAt(i));
+                    throw new IllegalArgumentException("Car√°cter no v√°lido: " + cadena.charAt(i));
             }
         }
 
@@ -80,7 +80,7 @@ public class Jugada {
         for (int i = 0; i < this.fichas.length; i++) {
             if (!marcadasActual[i]) {
                 for (int j = 0; j < oculta.fichas.length; j++) {
-                    if (!marcadasOculta[j] && this.fichas[j] == oculta.fichas[j]) {
+                    if (!marcadasOculta[j] && this.fichas[i] == oculta.fichas[j]) {
                         descolocadas++;
                         marcadasOculta[j] = true;
                         break;
